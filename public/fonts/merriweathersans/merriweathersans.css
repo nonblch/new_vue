@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans Book'), local('MerriweatherSans-Book'), url('merriweathersansbook.woff2') format('woff2'), url('merriweathersansbook.woff') format('woff'), url('merriweathersansbook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans BookItalic'), local('MerriweatherSans-BookItalic'), url('merriweathersansbookitalic.woff2') format('woff2'), url('merriweathersansbookitalic.woff') format('woff'), url('merriweathersansbookitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url('merriweathersansregular.woff2') format('woff2'), url('merriweathersansregular.woff') format('woff'), url('merriweathersansregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans Italic'), local('MerriweatherSans-Italic'), url('merriweathersansitalic.woff2') format('woff2'), url('merriweathersansitalic.woff') format('woff'), url('merriweathersansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans Bold'), local('MerriweatherSans-Bold'), url('merriweathersansbold.woff2') format('woff2'), url('merriweathersansbold.woff') format('woff'), url('merriweathersansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans Bold Italic'), local('MerriweatherSans-BoldItalic'), url('merriweathersansbolditalic.woff2') format('woff2'), url('merriweathersansbolditalic.woff') format('woff'), url('merriweathersansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans ExtraBold'), local('MerriweatherSans-ExtraBold'), url('merriweathersansextrabold.woff2') format('woff2'), url('merriweathersansextrabold.woff') format('woff'), url('merriweathersansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: local('Merriweather Sans ExtraBold Italic'), local('MerriweatherSans-ExtraBldItalic'), url('merriweathersansextrabolditalic.woff2') format('woff2'), url('merriweathersansextrabolditalic.woff') format('woff'), url('merriweathersansextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}

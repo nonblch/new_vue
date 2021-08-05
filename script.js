@@ -23,6 +23,10 @@ const arrOfManGoods = [
 
 const arrOfCart = [];
 
+
+const buttonSearch = document.querySelector('.but-search');
+const inputSearch = document.querySelector('.form-search');
+
 class GoodList {
     constructor(container = '.box-product', list) {
         this.container = container;
@@ -32,6 +36,7 @@ class GoodList {
     }
 
     renderList() {
+
         const block = document.querySelector(this.container);
 
         this.goods.forEach((item) => {
@@ -41,6 +46,8 @@ class GoodList {
         });
     }
 }
+
+
 
 class Good {
     constructor(el) {
@@ -67,11 +74,25 @@ class GoodMan extends Good {
     }
 }
 
+
+
 const $title = document.querySelector('title').innerHTML;
 
-if ($title == 'Index') {
-    const goodList = new GoodList('.box-product', Good);
 
+if ($title === 'Index') {
+    const goodList = new GoodList('.box-product', Good);
+    console.log(goodList);
+    buttonSearch.addEventListener('click',()=>{
+        const inputValue = inputSearch.value;
+        const regex = new RegExp(inputValue, 'i');
+
+        const filtredGoods = goodList.goods.filter((good) => regex.test(good.title));
+        const block = document.querySelector(goodList.container);
+        block.innerHTML = '';
+        goodList.goods = filtredGoods;
+        goodList.renderList()
+
+    });
     goodList.renderList()
 
 } else {
@@ -79,9 +100,26 @@ if ($title == 'Index') {
     const goodList = new GoodList('.box-product', GoodMan);
 
     goodList.goods = arrOfManGoods;
+    buttonSearch.addEventListener('click',()=>{
+        const inputValue = inputSearch.value;
+        const regex = new RegExp(inputValue, 'i');
 
+        const filtredGoods = goodList.goods.filter((good) => regex.test(good.title));
+        const block = document.querySelector(goodList.container);
+        block.innerHTML = '';
+        goodList.goods = filtredGoods;
+        goodList.renderList()
+
+    });
     goodList.renderList()
 }
+
+buttonSearch.addEventListener('click',()=>{
+    const inputValue = inputSearch.value;
+
+
+});
+
 
 class GoodCart extends Good {
     constructor (el) {
